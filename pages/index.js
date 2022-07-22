@@ -52,8 +52,6 @@ export async function getStaticProps() {
   const res = await fetch('https://www.freetogame.com/api/games')
   const posts = await res.json()
 
-  return { props: {posts},
-          revalidate: 10
-        }
+  return { props: {posts}}
 }
 export default Home;
