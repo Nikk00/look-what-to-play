@@ -6,7 +6,7 @@ function Games({ games }){
     return(
     <div className={styles.container}>
       <Header></Header>
-      <body>
+      <main>
           <div className='w-full h-auto bg-gradient-to-r from-gray-800 to-gray-800 rounded-md border-2 border-black'>
             <div className="grid place-content-center">
               <div className='grid justify-items-center'>
@@ -21,17 +21,11 @@ function Games({ games }){
                 <h1 className='text-white'>Fecha de Lanzamiento: {games.release_date}</h1>
                 <h1 className='text-white'>Genero: {games.genre}</h1>
                 <p className='text-white'>Descripcion: {games.description}</p>
-                <h1 className='text-white'>Requerimientos:</h1>
-                <ul className='text-white'>
-                <li>Sistema Operativo: {games.minimum_system_requirements.os}</li>
-                <li>Procesador: {games.minimum_system_requirements.processor} </li>
-                <li>Memoria RAM: {games.minimum_system_requirements.memory} </li>
-                <li>Grafica: {games.minimum_system_requirements.graphics}</li>
-                </ul>
+                <a href={games.game_url} target="_blank" rel="noopener noreferrer"><h1 className='text-cyan-400'>Mas detalles Aquí</h1></a>
               </div>
             </div>
           </div>
-      </body>
+      </main>
       <br></br>
       <Footer></Footer>
     </div>

@@ -6,10 +6,9 @@ import Logo from '/public/images/logo-nl.png'
 import React from 'react-dom';
 function Home({ posts }) {
     return(
-      <>
       <div className={styles.container}>
         <Header></Header>
-        <body>
+        
         <main className={styles.main}>
               
           <div className='grid lg:grid-cols-3 gap-4 justify-items-center md:grid-cols-2 sm:grid-cols-1'>
@@ -29,7 +28,7 @@ function Home({ posts }) {
             
           </div>
         </main>
-        </body>
+       
         
         <footer className={styles.footer}>
           <a
@@ -44,7 +43,6 @@ function Home({ posts }) {
           </a>
         </footer>
       </div>
-      </>
     );
 }
 export async function getStaticProps() {
