@@ -1,12 +1,11 @@
 .container {
-  padding: 0 2rem;
   background-color: rgb(15, 15, 15);
   min-height: 100vh;
   color: white;
 }
 .main {
-  min-height: 100vh;
-  padding: 1rem 0;
+  /* min-height: 100vh; */
+  padding: 1rem
 }
 
 .footer {
@@ -37,6 +36,9 @@
 
 .logo {
   margin-left: 0.5rem;
+}
+.filtro{
+  display: none;
 }
 
 @media (max-width: 600px) {

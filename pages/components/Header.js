@@ -6,10 +6,10 @@ export default function Header(){
         <Head>
         <title>Look What To Play</title>
         <meta name="description" content="Look What To Play" />
-        <link rel="icon" href="/public/images/favicon.ico" />
+        <link rel="icon" href='../../public/images/favicon.ico' />
       </Head>
       <header>
-      <Link href="/"><a className='text-center text-white p-5 text-2xl font-mono font-bold'><h1>Look What To Play</h1></a></Link>
+      <Link href="/"><a className='text-center text-white text-2xl font-mono font-bold'><h1 className='pt-3'>Look What To Play</h1></a></Link>
       </header>
       </>
     )
