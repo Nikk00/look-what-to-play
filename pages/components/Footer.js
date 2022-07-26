@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
-import Logo from '/public/images/logo-nl.png'
+import Logo from '/public/logo-nl.png'
 
 export default function Footer(){
     return(

@@ -8,7 +8,7 @@ import {useState} from 'react';
 
 function Home({ posts }) {
 
-const [searchValue, setSearchValue] = useState('')
+/* const [searchValue, setSearchValue] = useState('')
 
 const onSearch = (event) => {
   setSearchValue(event.target.value)
@@ -20,8 +20,8 @@ const onSearch = (event) => {
         :game.classList.add("hidden")
   })
   }
-}
-  /* if (typeof window !== 'undefined') {
+} */
+  if (typeof window !== 'undefined') {
     document.addEventListener('keyup', e => {
       if(e.target.matches('#search')){
         var games = document.querySelectorAll('.gameCard')
@@ -32,7 +32,7 @@ const onSearch = (event) => {
       })
       }
     })
-  } */
+  }
  
     return(
       <div className={styles.container}>
@@ -41,8 +41,8 @@ const onSearch = (event) => {
           <div className='flex place-content-center'>
             <div className='flex flex-row lg:w-1/3 md:w-1/2 sm:w-1/2 h-14 bg-gradient-to-r bg-gray-800 my-1 rounded-lg justify-center opacity-75'>
               <div className='flex items-center'>
-                {/* <p className='text-white font-bold'>Search:</p><input id='search' className='text-black rounded-md mx-1'></input> */}
-                <p className='text-white font-bold'>Search:</p><input value={searchValue} onChange={onSearch} id='search' className='text-black rounded-md mx-1' placeholder=''></input>
+                <p className='text-white font-bold'>Search:</p><input id='search' className='text-black rounded-md mx-1'></input>
+                {/* <p className='text-white font-bold'>Search:</p><input value={searchValue} onChange={onSearch} id='search' className='text-black rounded-md mx-1'></input> */}
               </div>
             </div>
           </div>
