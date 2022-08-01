@@ -39,16 +39,14 @@ const onSearch = (event) => {
         <Header></Header>
         <main className={styles.main}>
           <div className='flex place-content-center'>
-            <div className='flex flex-row lg:w-1/3 md:w-1/2 sm:w-1/2 h-14 bg-gradient-to-r bg-gray-800 my-1 rounded-lg justify-center opacity-75'>
-              <div className='flex items-center'>
+            <div className='flex flex-row w-full lg:w-1/3 md:w-1/2 sm:w-full h-14 bg-gradient-to-r bg-gray-800 my-1 rounded-lg justify-center opacity-75 items-center'>
                 <p className='text-white font-bold'>Search:</p><input id='search' className='text-black rounded-md mx-1'></input>
                 {/* <p className='text-white font-bold'>Search:</p><input value={searchValue} onChange={onSearch} id='search' className='text-black rounded-md mx-1'></input> */}
-              </div>
             </div>
           </div>
           <div className='grid lg:grid-cols-3 gap-4 justify-items-center md:grid-cols-2 sm:grid-cols-1'>
             {posts.map(({id, title, genre, thumbnail, publisher, developer, release_date}) => (
-              <div key={id} id={genre} className='gameCard w-96 h-96 bg-gradient-to-r from-gray-800 rounded-md'>
+              <div key={id} id={genre} className='gameCard w-full h-full bg-gradient-to-r from-gray-800 rounded-md pb-3 lg:w-96 md:w-4/5 sm:1/2'>
                   <picture><img src={thumbnail} alt={title} className='w-full rounded-md'></img></picture>
                     <h1 className='text-center font-bold'>{title}</h1>
                     <h1 className='px-2'>Publisher: {publisher}</h1>

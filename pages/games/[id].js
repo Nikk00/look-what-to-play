@@ -21,7 +21,9 @@ function Games({ games }){
                 <h1 className='text-white'>Release date: {games.release_date}</h1>
                 <h1 className='text-white'>Genre: {games.genre}</h1>
                 <p className='text-white'>Description: {games.description}</p>
+                <br></br>
                 <a href={games.game_url} target="_blank" rel="noopener noreferrer"><h1 className='text-cyan-400'>More details here</h1></a>
+                <br></br>
               </div>
               
             </div>
